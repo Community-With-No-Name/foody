@@ -14,11 +14,11 @@ export default function Burger({ open, setOpen }) {
         Exit
       </div>
       <div className=" h-screen w-screen flex flex-col justify-center items-center my-10 ">
-        <ul className=" text-3xl font-bold ">
-          <li className=" cursor-pointer hover:text-white">Home</li>
-          <li className=" cursor-pointer hover:text-white">Panel</li>
-          <li className=" cursor-pointer hover:text-white">Info</li>
-          <li className=" cursor-pointer hover:text-white">Contact</li>
+        <ul className=" text-4xl font-bold ">
+          <li className=" flex justify-center cursor-pointer  my-4 hover:text-white">Home</li>
+          <li className=" flex justify-center cursor-pointer  my-4 hover:text-white">Panel</li>
+          <li className=" flex justify-center cursor-pointer  my-4 hover:text-white">Info</li>
+          <li className=" flex justify-center cursor-pointer  my-4 hover:text-white">Contact</li>
         </ul>
       </div>
       <div className=" h-screen flex justify-center items-end text-3xl font-bold m-5 mt-16">
