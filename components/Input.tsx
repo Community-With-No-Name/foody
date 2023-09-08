@@ -1,5 +1,6 @@
 import React from 'react'
 
+// Matthew when you see this message add placeholder to the props
 export default function Input({name, type, label}) {
   return (
     <div className='p-[5px] flex flex-col gap-[5px] outline-none justify-center pl-[50px] pr-[50px] '>
