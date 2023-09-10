@@ -1,5 +1,7 @@
 import Burger from "@/components/Burger";
+import Dashboard from "@/components/Dashboard";
 import Filter from "@/components/Filter";
+import LowerDash from "@/components/LowerDash";
 import React, { useState } from "react";
 
 export default function test() {
@@ -7,6 +9,8 @@ export default function test() {
   return (
     <div>
       <div className={`${open ? "hidden" : "block"}`}>
+       <Dashboard></Dashboard>
+       <LowerDash></LowerDash>
         <div
           className={` flex justify-end items-end   cursor-pointer hover:text-black`}
           onClick={() => setOpen(true)}
