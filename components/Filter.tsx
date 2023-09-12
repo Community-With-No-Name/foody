@@ -2,6 +2,8 @@ import React from "react";
 import { FOODLIST } from "@/utils/foodlist";
 import { Montez } from "next/font/google";
 const montez = Montez({subsets:['latin'], weight: '400'})
+
+
 export default function Filter() {
   return (
     <div>
@@ -16,6 +18,7 @@ export default function Filter() {
           <div
             className="flex justify-center w-56 text-lg font-semibold text-gray-700 capitalize cursor-pointer"
             key={index}
+
           >
             {pick.name}
           </div>

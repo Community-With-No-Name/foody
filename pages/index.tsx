@@ -1,5 +1,7 @@
 import Burger from "@/components/Burger";
 import React, { useState } from "react";
+import { GiHamburgerMenu } from "react-icons/Gi"
+
 
 export default function home() {
   const [open, setOpen] = useState(false);
@@ -21,7 +23,7 @@ export default function home() {
             className="flex justify-end items-end cursor-pointer text-black md:hidden"
             onClick={() => setOpen(true)}
           >
-            Bugger Icon
+            <GiHamburgerMenu></GiHamburgerMenu>
           </div>
         
           <div className=" hidden md:flex gap-10  text-white text-3xl font-bold ">
