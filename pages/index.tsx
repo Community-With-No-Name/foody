@@ -1,8 +1,5 @@
 import React from 'react'
 
-
-
-
 export default function home() {
   return (
 <div style={{backgroundImage: 'url(/image.png)'}} className='bg-center bg-cover bg-no-repeat' >
