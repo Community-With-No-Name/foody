@@ -11,25 +11,20 @@ import React, { useState } from "react";
 export default function test() {
   const [open, setOpen] = useState(false);
 
-    const {data} = useQuery({
-      queryKey: [queryKeys.getFoodsById],
-      queryFn: async() => await getRequest(getRecipeByCategory("corn"))
-    })
-    React.useEffect(()=>{
-      console.log(data)
-    }, [data])
-  // console.log(data, isLoading)
   return (
     <div>
-      <div
-        className={` flex justify-end items-end  ${
-          open ? "hidden" : "flex"
-        } cursor-pointer hover:text-black`}
-        onClick={() => setOpen(true)}
-      >
-        Bugger Icon
-      </div>
       <Burger open={open} setOpen={setOpen}></Burger>
+      <div
+        className={`  ${
+          open ? "hidden" : "block"
+        } `}
+      >
+        <Dashboard></Dashboard>
+        <LowerDash></LowerDash>
+        <div className="flex justify-end items-end cursor-pointer hover:text-black " onClick={() => setOpen(true)}>Bugger Icon</div>
+
+        <Filter></Filter>
+      </div>
     </div>
   );
 }
