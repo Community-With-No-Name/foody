@@ -11,9 +11,8 @@ export default function Filter() {
   const [foodName, setfoodName] = useState(null);
 
   const handleClick = (fdn) => {
-    () => {
-      setfoodName(fdn);
-    };
+        setfoodName(fdn);
+
   };
   const [load, setload] = useState(false);
 
