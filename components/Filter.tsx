@@ -11,13 +11,12 @@ export default function Filter() {
   const [foodName, setfoodName] = useState(null);
 
   const handleClick = (fdn) => {
-        setfoodName(fdn);
-
+    setfoodName(fdn);
   };
   const [load, setload] = useState(false);
 
   const { data: foodData, isFetched } = useQuery({
-    queryKey: [queryKeys.getFoodsById, foodName],
+    queryKey: [queryKeys.getFoodsByCategory, foodName],
     queryFn: async () => await getRequest(getRecipeByCategory(foodName)),
     enabled: load,
   });
@@ -29,7 +28,7 @@ export default function Filter() {
     setload(true);
   }, [foodName]);
 
-    console.log(foodData)
+  console.log(foodData);
   return (
     <div>
       <div className=" flex flex-col justify-center m-5">
