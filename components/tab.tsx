@@ -41,7 +41,7 @@ import React, { useState } from 'react';
     
     const Tab = ({ label, children }) => {
       return (
-        <div label={label} className="hidden">
+        <div className="hidden">
           {children}
         </div>
       );
